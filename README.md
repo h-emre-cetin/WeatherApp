@@ -32,10 +32,10 @@ An ASP.NET Core application that integrates with OpenWeatherMap API to retrieve 
 2. Navigate to the root directory
 3. Update the connection string in `appsettings.json` to point to your MySQL instance
 4. Set your OpenWeatherMap API key in `appsettings.json` or as an environment variable:
-   -export OpenWeatherMapApiKey=your_api_key_here
+-export OpenWeatherMapApiKey=your_api_key_here
 5. Run the application:
    -cd WeatherApp.API dotnet run
-6. Access the API at `https://localhost:5001` or `http://localhost:5000`
+6. Access the API at `https://localhost:7274/`
 
 ### API Endpoints
 
