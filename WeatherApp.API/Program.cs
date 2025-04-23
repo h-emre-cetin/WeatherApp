@@ -4,7 +4,10 @@ using Hangfire.MySql;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using WeatherApp.Core.Interfaces;
+using WeatherApp.Core.Services;
 using WeatherApp.Infrastructure.Data;
+using WeatherApp.Infrastructure.Repositories;
+using WeatherApp.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +33,11 @@ builder.Services.AddDbContext<WeatherDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 builder.Services.AddHttpClient();
+
+//Register Services
+builder.Services.AddScoped<IWeatherRepository, WeatherRepository>();
+builder.Services.AddScoped<IWeatherService, WeatherService>();
+builder.Services.AddScoped<IExternalWeatherService, OpenWeatherMapService>();
 
 // Configure Hangfire
 builder.Services.AddHangfire(configuration => configuration
