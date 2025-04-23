@@ -46,6 +46,26 @@ An ASP.NET Core application that integrates with OpenWeatherMap API to retrieve 
 ## Running Tests
 - cd WeatherApp.Tests dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 
+## Short Feedback
+Q : Was it easy to complete the task using AI?
+A : Yes, the AI provided clear instructions and code snippets that were easy to follow.
+
+Q : How long did task take you to complete?
+A : Approximately 90 minutes.
+
+Q : Was the code ready to run after generation?
+A : Yes, the code was ready to run after making minor adjustments to the connection string, API key, adding references, instaling nuget packages.
+
+Q : What did you have to change to make it usable?
+A : Get my API key from provider.
+
+Q : Which challenges did you face during completion of the task?
+A : The main challenge was ensuring that the Hangfire setup steps. I've never used it before.
+
+Q : Which specific prompts you learned as a good practice to complete the task?
+A : Providing clear and specific requirements for the Hanfire setup and dependency injection. Saying "Provide me" and "Step by step" is a good practice."
+
+
 ## License
 
 MIT
